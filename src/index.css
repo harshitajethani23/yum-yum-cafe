@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+    margin: 0;
+    padding: 0;
+    
+   @apply bg-[#FFE6D4];
+}
+
+
+#root {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
