@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar.jsx"
+
 import ReviewsCard from "../components/ReviewsCard.jsx"
 
 const REVIEWS_DATA = [
@@ -12,7 +14,7 @@ const REVIEWS_DATA = [
         rating:4,
         avtar:"https://avatar.oxro.io/avatar.svg?name=Arjun+Mehta&background=f4c2c2&color=000000"
     },
-     {name:"sara khan",
+     {name:"Sara Khan",
         review:"One of the coziest cafés I’ve visited.",
         rating:5,
         avtar:"https://avatar.oxro.io/avatar.svg?name=Sara+Khan&background=fadadd&color=000000"
@@ -42,7 +44,7 @@ const REVIEWS_DATA = [
         rating:3.5,
          avtar:"https://avatar.oxro.io/avatar.svg?name=Samad+Ansari&background=fbcce7&color=000000"
     },
-     {name:"Niharika panjwani",
+     {name:"Niharika Panjwani",
         review:"Love the aesthetic here .",
         rating:4.9,
          avtar:"https://avatar.oxro.io/avatar.svg?name=Niharika+Panjwani&background=fbcce7&color=000000"
@@ -52,6 +54,7 @@ const REVIEWS_DATA = [
 
 function Reviews() {
   return (
+    <div><Navbar />
     <div className="mt-16">
         <h2 className="text-center font-bold text-4xl text-[#CD2C58] mb-10">What our customers says</h2>
     <div className="flex flex-wrap justify-center ">
@@ -66,6 +69,7 @@ function Reviews() {
             avtar={avtar}/>
         );
        })}
+    </div>
     </div>
     </div>
   )

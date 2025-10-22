@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar.jsx"
 
 const MENU_ITEMS = [
     {
@@ -183,6 +184,8 @@ const MENU_ITEMS = [
 
 function Menu() {
   return (
+    <div>
+      <Navbar />
     <div className="mt-10">
           <h1 className="text-3xl font-bold text-center text-[#CD2C58] mb-8">
         ☕ Yum Yum Cafe Menu
@@ -200,6 +203,7 @@ function Menu() {
           </div>
         )
       })}
+      </div>
       </div>
       </div>
     
