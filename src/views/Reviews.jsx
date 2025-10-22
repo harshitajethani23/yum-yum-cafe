@@ -52,7 +52,7 @@ const REVIEWS_DATA = [
 
 function Reviews() {
   return (
-    <div className="mt-20">
+    <div className="mt-16">
         <h2 className="text-center text-4xl text-[#CD2C58] mb-10">What our customers says</h2>
     <div className="flex flex-wrap justify-center ">
        {REVIEWS_DATA.map((reviewObj)=>{
